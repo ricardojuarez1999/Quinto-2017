@@ -5,7 +5,7 @@ def crear():
 	arch.close
 
 def escribir(lon,vec):
-	arch = open("contraseñas.txt", "r")
+	arch = open("contraseñas.txt", "w")
 	listado = "0123456789abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
 	for i in range(vec):
 		contraseña = ""
@@ -18,5 +18,5 @@ def leer():
 	linea = arch.readline()
 	while linea != "":
 		print (linea)
-		linea = linea.readline()
+		linea = arch.readline()
 	arch.close()

@@ -3,7 +3,6 @@ import archivos
 print ("bienvenido")
 print ("su archivo aparecera como -contraseñas.txt-")
 archivos.crear()
-input("hola")
-archivos.escribir(sys.argv[1],sys.argv[2])
+archivos.escribir(int(sys.argv[1]),int(sys.argv[2]))
 archivos.leer()
 a = input("")
